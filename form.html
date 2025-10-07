@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+    </head>
+    <body>
+        <h2>Registration Form</h2>
+        <form action="index.php" method="post" enctype="muitipart/form-data">
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Name" minlength="5" maxlength="20" required>
+            <br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Password" minlength="8" required>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="abcd@gmail.com" required>
+            <br><br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" min="18" max="100" required>
+            <br><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" required>
+            <br><br>
+
+            <label for="gender">Gender:</label>
+
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="Male">
+
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <br><br>
+            
+            <label for="payment">Payment:</label>
+            <select id="payment">
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="giftcard">Giftcard</option> 
+            </select>
+            <br><br>
+
+            <label for="subscribe">Subscribe:</label>
+            <input type="checkbox" id="subscribe">
+            <br><br>
+
+            <label for="comment">Comment:</label>
+            <textarea id="comment" rows="3" cols="25"></textarea>
+            <br><br>
+
+            <label for="file">Choose a file:</label>
+            <input type="file" id="file" accept="image/png, image/jpeg">
+            <br><br>
+
+            <input type="submit" value="Register">
+            <input type="reset" value="Reset">
+        </form>
+    </body>
+</html>

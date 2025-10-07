@@ -1,0 +1,558 @@
+@font-face{
+     src:url(fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+     font-family: 'OpenSans';
+}
+body {
+   
+    background-color: rgb(17, 17, 17);
+    color: white;
+    text-align: justify;
+    border: 2px solid rgb(161, 161, 161);
+    padding: 10px;
+    
+    display: flow-root;
+    
+}
+.even{
+    color: rgb(216, 27, 27);
+}
+.odd{
+    color: rgb(89, 208, 255);
+}
+#p2{
+    font-size: 10px;
+    color: rgb(237, 119, 198);
+}
+#p3{
+    font-family: 'OpenSans', sans-serif;
+    font-size: 30px;
+    color: rgb(177, 255, 61);
+}
+#p1{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(177, 255, 61);
+    font-size: 20px;
+}
+#p9{
+    border: 2px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    padding: 7px;
+    margin: 20px;
+    font-family:'Roboto', sans-serif;
+    border-radius: 5px;
+}
+#h1{
+    font-family:'Roboto', sans-serif;
+    text-align: left;
+    border-bottom: 2px solid white;
+    text-shadow: 3px 3px 5px rgb(0, 217, 255), -3px -3px 5px rgb(0, 209, 21);
+}
+#box1{
+    height: 100px;
+    width: 200px;
+    border: 2px solid white;
+    margin: 20px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow:  3px 3px 7px rgb(0, 157, 255), -3px -3px 7px rgb(255, 8, 8);
+}
+#img1{
+    float: left;
+    height: 150px;
+    padding-right: 10px;
+    
+}
+#img2{
+    float: right;
+    height: 150px;
+    padding-left: 10px;
+    
+}
+#box2{
+    height: 100px;
+    border: 2px solid white;
+    padding: 10px;
+    overflow: auto;
+}
+#box3{
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow:  3px 3px 7px rgb(0, 157, 255), -3px -3px 7px rgb(255, 8, 8);
+    display: inline-block;
+}
+#span1{
+    width: 200px;
+    height: 30px;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 20px;
+    background-color: aquamarine;
+    color: rgb(0, 16, 106);
+    display: block;
+}
+.border{
+    border: 2px solid white;
+    padding: 5px;
+    overflow: auto;
+}
+#box4{
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    border: 2px solid white;
+    padding: 10px;
+    float: left;
+    overflow: auto;
+}
+#box5{  
+    height: 0%;
+    width: 50%;
+    box-sizing: border-box;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px;
+    overflow: auto;
+    float: left;
+}
+#adbox{
+    height: 120px;
+    width: 120px;
+    border: 2px solid white;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    right: 0px;
+    bottom: 0px;
+    position: sticky;
+}
+#adbox:hover{
+    box-shadow:  3px 3px 7px rgb(0, 157, 255), -3px -3px 7px rgb(255, 8, 8);
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+#insideBox{
+    height: 60px;
+    width: 60px;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 20px;
+    color: rgb(0, 16, 106);
+    background-color: rgb(0, 211, 231);
+    position: absolute;
+}
+#container
+{
+    border: 2px solid white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+#container +p
+{
+    background-color: rgb(0, 16, 106);
+}
+li:nth-child(3)
+{
+    background-color: rgb(89, 208, 255);
+}
+#greetings p
+{
+    background-color: rgb(0, 16, 106);
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    display: none;
+}
+#greetings:hover p
+{
+    display: block;
+    background-color: rgb(89, 208, 255);
+    color: black;
+    box-shadow: 3px 3px 5px rgb(122, 244, 255), -3px -3px 5px rgb(122, 244, 255);
+    transition: background-color 0.7s ease, color 0.7s ease, box-shadow 0.7s ease;
+}
+h2::first-letter
+{
+    color: rgb(5, 139, 235);
+    font-size: 40px;
+    font-weight: bold;
+}
+#par1::first-line
+{
+    background-color: rgb(73, 0, 163);
+    color: rgb(177, 255, 61);
+    font-size: 20px;
+    font-weight: bold;
+}
+li:nth-child(3)
+{
+    background-color: transparent;
+}
+#par1::selection
+{
+    background-color: rgb(0, 95, 28);
+    color: rgb(255, 242, 0);
+}
+#fruit li::before
+{
+    margin-right: 3px;
+}
+#apple::after
+{
+    content: "🍎 ";
+    color: red;
+}
+#banana::after
+{
+    content: "🍌 ";
+    color: yellow;
+}
+#grape::after
+{
+    content: "🍇 ";
+    color: purple;
+}
+#orange::after
+{
+    content: "🍊 ";
+    color: orange;
+}
+#mango::after
+{
+    content: "🍉 ";
+    color: green;
+}
+.pagenation
+{
+    text-align: center;
+}
+.pagenation a
+{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 2px;
+    background-color: rgb(0, 189, 206);
+    border-radius: 5px;
+}
+.pagenation a.active
+{
+    background-color: rgb(0, 194, 58);
+    border-radius: 13px;
+    box-shadow: inset 1px 1px 5px rgb(101, 225, 250), inset -1px -1px 5px rgb(244, 255, 122);
+    transition: background-color 0.3s ease, box-shadow 0.7s ease;
+}
+.pagenation a:hover:not(.active)
+{
+    background-color: rgb(160, 0, 0);
+    box-shadow: 3px 3px 5px rgb(255, 231, 52), -3px -3px 5px rgb(255, 231, 52);
+    transition: background-color 0.3s ease, box-shadow 0.7s ease;
+}
+.button
+{
+    background-color: rgb(0, 149, 55);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+.dropdown
+{
+    display: inline-block;
+}
+.dropdown a
+{
+    display: block;
+    color: rgb(47, 47, 47);
+    text-decoration: none;
+    padding: 6px 14px;
+}
+.dropdown .content
+{
+    background-color: rgb(199, 199, 199);
+    display: none;
+    position: absolute;
+    background-color: rgb(192, 192, 192);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgb(255, 251, 251);
+    border-radius: 5px;
+}
+.dropdown:hover .content
+{
+    display: block;
+}
+.dropdown:hover .button
+{
+
+    background-color: rgb(0, 177, 53);
+    transition: background-color 0.3s ease;
+}
+.dropdown a:hover
+{
+    background-color: rgb(235, 235, 235);
+    transition: background-color 0.3s ease, color 0.2s ease;
+}
+.gallery{
+    display: inline-block;
+    border: 1px solid;
+    padding: 0px;
+    margin: 10px;
+}
+.gallery img:hover{
+    border: 1px solid rgb(0, 0, 0);
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+}
+.description{
+    text-align: center;
+    padding: 5px;
+}
+.icons{
+    text-align: center;
+    padding: 10px;
+}
+.icons a{
+    text-decoration: none;
+}
+.fa-sharp.fa-solid.fa-house.fa-bounce.fa-5x{
+    color: #8affdc; 
+    margin: 50px;
+}
+.fa-sharp.fa-solid.fa-house.fa-bounce.fa-5x:hover {
+    color: rgb(42, 180, 161);
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+.fa-brands.fa-youtube.fa-bounce.fa-5x{
+    color: #f10909; 
+    margin: 50px;
+}
+.fa-brands.fa-youtube.fa-bounce.fa-5x:hover {
+    color: rgb(188, 0, 0);
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+.fa-brands.fa-twitter.fa-bounce.fa-5x{
+    color: #74C0FC; 
+    margin: 50px;
+}
+.fa-brands.fa-twitter.fa-bounce.fa-5x:hover {
+    color: rgb(0, 115, 186);
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+}
+.bigbox{
+    border: 5px solid white;
+    height:700px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.boxM{
+    width: 150px;
+    height: 150px;
+    font-size: 66px;
+    text-align: center;
+    line-height: 150px;
+    border-radius: 10px;
+}
+#box1p{
+    background-color: rgb(255, 66, 66);
+    order: 1;
+    
+}
+#box2p{
+    background-color: rgb(81, 255, 81);
+    align-self: center;
+}
+#box3p{
+    background-color: rgb(255, 240, 71);
+}
+#box4p{
+    background-color: rgb(90, 255, 247);
+}
+.boxMM{
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 10px;
+    margin: 10px;
+}
+#box1pp{
+    background-color: rgb(255, 66, 66);
+    transform:  rotateX(45deg);
+}
+#box2pp{
+    background-color: rgb(81, 255, 81);
+    transform:  rotateY(45deg);
+}
+#box3pp{
+    background-color: rgb(255, 240, 71);
+    transform:  rotateZ(45deg);
+}
+#box4pp{
+    background-color: rgb(90, 255, 247);
+    transform:  rotateX(45deg) rotateY(45deg) rotateZ(45deg);
+}
+#box5pp{
+    background-color: rgb(255, 66, 66);
+    transform: scale(1.5,1.5);
+}
+#box6pp{
+    background-color: rgb(81, 255, 81);
+    transform: scale3d(1.5,1.5,1.5);
+}
+#box7pp{
+    background-color: rgb(255, 240, 71);
+    transform: skew(45deg);
+}
+#box8pp{
+    background-color: rgb(90, 255, 247);
+    transform: skew(45deg,25deg);
+}
+#box9pp{
+    background-color: rgb(10, 193, 114);
+    transform: translateX(100%) rotateZ(90deg) scale(0.5);
+}
+.boxMMM
+{
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 10px;
+    margin: 10px;
+    transform: rotateZ(45deg) translateX(50%) scale(0.820);
+}
+#box10pp{
+    background-color: rgb(255, 117, 48);
+}
+#box11pp{
+    background-color: rgb(231, 53, 225);
+}
+#box12pp{
+    background-color: rgb(108, 68, 255);
+}
+#img33
+{
+    margin-top: 40px;
+    width: 300px;
+    transform: translateX(50%) rotate(170deg) scale(1.5);
+    animation-name:rotate;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate;
+}
+#box13pp{
+    background-color: rgb(231, 53, 225);
+    animation: slideLeft 1s ease-in-out;
+}
+@keyframes slideLeft
+{
+    from {
+        transform: translateX(300%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+#box14pp{
+    background-color: rgb(108, 68, 255);
+    animation-name:slideUp;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate;
+} 
+@keyframes slideUp{
+    from{transform: translateY(100%);}
+}
+#box15pp{
+    margin-top: 60px;
+    background-color: rgb(189, 65, 255);
+    animation-name: colorchange;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite; 
+}
+#box16pp{
+    margin-top: 60px;
+    background-color: rgb(87, 78, 255);
+    animation-name: glow;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate;
+}
+#box17pp{
+    margin-top: 60px;
+    background-color: rgb(189, 65, 255);
+}
+#box17pp:hover{
+    animation-name: glow;
+    animation-duration: 1.7s;
+}
+#box18pp{
+    margin-top: 60px;
+    background-color: rgb(113, 255, 65);
+}
+#box18pp:active{
+    animation-name: glow;
+    animation-duration: 0.3s;
+}
+#box19pp{
+    margin-top: 60px;
+    background-color: rgb(255, 69, 150);
+    animation-name: slideLeft;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#box20pp{
+    margin-top: 60px;
+    background-color: rgb(255, 98, 54);
+    animation-name: slideLeft;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+@keyframes rotate{
+    50%{transform: rotate(360deg);}
+}
+@keyframes grow
+{
+    50%{transform: scale(2,2)}
+}
+@keyframes shrink
+{
+    50%{transform: scale(0.5,0.5)}
+}
+@keyframes fade{
+    50%{opacity:0;}
+}
+@keyframes colorchange
+{
+    0%{background-color: rgb(255, 66, 66)}
+    20%{background-color: rgb(255, 233, 91)}
+    40%{background-color: rgb(91, 248, 67)}
+    60%{background-color: rgb(71, 172, 255)}
+    80%{background-color: rgb(164, 66, 255)}    
+}
+@keyframes glow
+{
+    50%{box-shadow: 3px 3px 50px rgb(121, 248, 255), -3px -3px 50px rgb(121, 248, 255);}
+}
